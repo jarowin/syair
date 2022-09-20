@@ -16,5 +16,10 @@
             </div>
             @endforeach
         </div>
+        @if ($prediksis->hasPages())
+        <div class="row mt-4">
+            {{ $prediksis->links('pagination::bootstrap-5') }}
+        </div>
+        @endif
     </div>
 @endsection

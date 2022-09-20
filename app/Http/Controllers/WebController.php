@@ -13,7 +13,7 @@ class WebController extends Controller
     {
         $pasarans = Pasaran::all();
         $syairs = Syair::all();
-        $prediksis = Prediksi::all();
+        $prediksis = Prediksi::orderBy('tanggal','desc')->paginate(20);
         return view('index', compact('pasarans', 'syairs', 'prediksis'));
     }
 
@@ -30,7 +30,7 @@ class WebController extends Controller
         $pasarans = Pasaran::all();
         $prediksis = Prediksi::whereHas('pasaran', function($query) use($request) {
             $query->where('nama', 'like', '%' . $request->nama . '%');
-        })->get();
+        })->paginate(10);
         return view ('post.pasaran', compact('prediksis', 'pasarans'));
     }
 }

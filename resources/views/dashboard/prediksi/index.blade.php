@@ -71,7 +71,7 @@ Prediksi
             </div>
             @if ($prediksis->hasPages())
             <div class="card-footer">
-                {{ $prediksis->links() }}
+                {{ $prediksis->links('pagination::bootstrap-5') }}
             </div>
             @endif
         </div>

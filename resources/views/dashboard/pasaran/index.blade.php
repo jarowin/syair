@@ -52,7 +52,7 @@ Pasaran
             </div>
             @if ($pasarans->hasPages())
             <div class="card-footer">
-                {{ $pasarans->links() }}
+                {{ $pasarans->links('pagination::bootstrap-5') }}
             </div>
             @endif
         </div>

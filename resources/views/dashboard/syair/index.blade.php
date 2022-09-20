@@ -52,7 +52,7 @@ Syair
             </div>
             @if ($syairs->hasPages())
             <div class="card-footer">
-                {{ $syairs->links() }}
+                {{ $syairs->links('pagination::bootstrap-5') }}
             </div>
             @endif
         </div>

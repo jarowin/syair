@@ -20,7 +20,7 @@ class PrediksiController extends Controller
     {
         $pasarans = Pasaran::all();
         $syairs = Syair::all();
-        $prediksis = Prediksi::latest()->paginate(10);
+        $prediksis = Prediksi::orderBy('tanggal','desc')->paginate(10);
         return view ('dashboard.prediksi.index', compact('prediksis', 'syairs', 'pasarans'));
     }
 
