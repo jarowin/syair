@@ -30,7 +30,7 @@ class WebController extends Controller
         $pasarans = Pasaran::all();
         $prediksis = Prediksi::whereHas('pasaran', function($query) use($request) {
             $query->where('nama', 'like', '%' . $request->nama . '%');
-        })->paginate(10);
+        })->orderBy('tanggal', 'desc')->paginate(10);
         return view ('post.pasaran', compact('prediksis', 'pasarans'));
     }
 }
