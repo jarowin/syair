@@ -2,10 +2,10 @@
     <div class="header-wrapper">
         <div class="ml-auto">
             <ul class="list-unstyled">
-                <li class="dropdown pc-h-item">
+                <li>
                     <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#"
                         role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="https://i.postimg.cc/ZR5qwycH/apple-touch-icon.png" alt="user-image" class="user-avtar" width="50" height="50">
+                        <img src="https://i.postimg.cc/D0hrDm6G/favicon.png" alt="user-image" class="user-avtar">
                         <span>
                             <span class="user-name">{{ auth()->user()->name }}</span>
                             <span class="user-desc">
@@ -17,7 +17,7 @@
                             </span>
                         </span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+                    {{-- <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault(); 
                                 document.getElementById('logout-form').submit();">
@@ -28,7 +28,7 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
-                    </div>
+                    </div> --}}
                 </li>
             </ul>
         </div>

@@ -2,9 +2,8 @@
     <div class="navbar-wrapper">
         <div class="m-header">
             <a href="{{ url('/dashboard') }}" class="b-brand">
-                <!-- ========   change your logo hear   ============ -->
-                <img src="https://i.postimg.cc/ZR5qwycH/apple-touch-icon.png" alt="" class="logo logo-lg" width="50" height="50">
-                <img src="https://i.postimg.cc/ZR5qwycH/apple-touch-icon.png" alt="" class="logo logo-sm" width="50" height="50">
+                <img src="https://i.postimg.cc/B6nsCC9P/logo.png" alt="" class="logo logo-lg" width="80" height="40">
+                <img src="https://i.postimg.cc/B6nsCC9P/logo.png" alt="" class="logo logo-sm" width="80" height="40">
             </a>
         </div>
         <div class="navbar-content">
@@ -13,25 +12,37 @@
                     <label>Navigation</label>
                 </li>
                 <li class="pc-item">
-                    <a href="{{ url('/dashboard') }}" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Dashboard</span></a>
+                    <a href="{{ url('/dashboard') }}" class="pc-link "><span class="pc-micon"><i
+                                class="material-icons-two-tone">home</i></span><span
+                            class="pc-mtext">Dashboard</span></a>
                 </li>
                 <li class="pc-item {{ request()->is('*pasaran*') ? 'active' : '' }}">
-                    <a href="{{ route('pasaran.index') }}" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">storefront</i></span><span class="pc-mtext">Pasaran</span></a>
+                    <a href="{{ route('pasaran.index') }}" class="pc-link "><span class="pc-micon"><i
+                                class="material-icons-two-tone">storefront</i></span><span
+                            class="pc-mtext">Pasaran</span></a>
                 </li>
                 <li class="pc-item {{ request()->is('*syair*') ? 'active' : '' }}">
-                    <a href="{{ route('syair.index') }}" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Syair</span></a>
+                    <a href="{{ route('syair.index') }}" class="pc-link "><span class="pc-micon"><i
+                                class="material-icons-two-tone">menu_book</i></span><span
+                            class="pc-mtext">Syair</span></a>
                 </li>
                 <li class="pc-item {{ request()->is('*prediksi*') ? 'active' : '' }}">
-                    <a href="{{ route('prediksi.index') }}" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">lightbulb_outline</i></span><span class="pc-mtext">Prediksi</span></a>
+                    <a href="{{ route('prediksi.index') }}" class="pc-link "><span class="pc-micon"><i
+                                class="material-icons-two-tone">local_library</i></span><span
+                            class="pc-mtext">Prediksi</span></a>
                 </li>
-                
-                {{-- <li class="pc-item {{ request()->is('*sosmed*') ? 'active' : '' }}">
-                    <a href="{{ route('sosmed.index') }}" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">menu_book</i></span><span class="pc-mtext">Sosmed</span></a>
+                <li class="pc-item">
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                        class="pc-link">
+                        <span class="pc-micon"><i class="material-icons-two-tone">power_settings_new</i></span><span
+                            class="pc-mtext">Logout</span>
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </li>
-                
-                <li class="pc-item {{ request()->is('*games*') ? 'active' : '' }}">
-                    <a href="{{ route('games.index') }}" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">star</i></span><span class="pc-mtext">Games</span></a>
-                </li> --}}
             </ul>
         </div>
     </div>

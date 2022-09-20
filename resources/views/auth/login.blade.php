@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="https://i.postimg.cc/Gh840G1S/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://i.postimg.cc/D0hrDm6G/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('backend/assets/fonts/feather.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/assets/fonts/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/assets/fonts/material.css') }}">
@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
-                            <img src="https://i.postimg.cc/ZR5qwycH/apple-touch-icon.png" alt="" width="50" height="50" class="img-fluid mb-4">
+                            <img src="https://i.postimg.cc/B6nsCC9P/logo.png" alt="Toto Abadi" width="120" height="50" class="img-fluid mb-4">
                             <h4 class="mb-3 f-w-400">LOGIN</h4>
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i data-feather="mail"></i></span>

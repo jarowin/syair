@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://i.postimg.cc/Gh840G1S/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://i.postimg.cc/D0hrDm6G/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('backend/assets/fonts/feather.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/assets/fonts/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/assets/fonts/material.css') }}">
@@ -23,7 +23,7 @@
     </div>
     <div class="pc-mob-header pc-header">
         <div class="pcm-logo">
-            <img src="https://i.postimg.cc/ZR5qwycH/apple-touch-icon.png" alt="" class="logo logo-lg" width="50" height="50">
+            <img src="https://i.postimg.cc/B6nsCC9P/logo.png" alt="" class="logo logo-lg" width="80" height="40">
         </div>
         <div class="pcm-toolbar">
             <a href="#!" class="pc-head-link" id="mobile-collapse">

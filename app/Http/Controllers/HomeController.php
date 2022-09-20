@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Syair;
+use App\Models\Pasaran;
+use App\Models\Prediksi;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard.index');
+        $pasarans = Pasaran::all();
+        $syairs = Syair::all();
+        $prediksis = Prediksi::all();
+        return view('dashboard.index', compact('pasarans', 'syairs', 'prediksis'));
     }
 }

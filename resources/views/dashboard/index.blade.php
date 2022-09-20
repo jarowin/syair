@@ -9,16 +9,16 @@
 
     <div class="col-xl-12 col-md-12">
         <div class="row">
-            {{-- <div class="col-sm-6">
+            <div class="col-sm-6">
                 <div class="card prod-p-card background-pattern">
                     <div class="card-body">
                         <div class="row align-items-center m-b-0">
                             <div class="col">
-                                <h6 class="m-b-5">Total Providers</h6>
-                                <h3 class="m-b-0">{{ $providers->count($providers) }}</h3>
+                                <h6 class="m-b-5">Total Pasaran</h6>
+                                <h3 class="m-b-0">{{ $pasarans->count($pasarans) }}</h3>
                             </div>
                             <div class="col-auto">
-                                <i class="material-icons-two-tone text-primary">sports_esports</i>
+                                <i class="material-icons-two-tone text-primary">storefront</i>
                             </div>
                         </div>
                     </div>
@@ -29,16 +29,16 @@
                     <div class="card-body">
                         <div class="row align-items-center m-b-0">
                             <div class="col">
-                                <h6 class="m-b-5 text-white">Total Games</h6>
-                                <h3 class="m-b-0 text-white">{{ $games->count('$games') }}</h3>
+                                <h6 class="m-b-5 text-white">Total Syair</h6>
+                                <h3 class="m-b-0 text-white">{{ $syairs->count($syairs) }}</h3>
                             </div>
                             <div class="col-auto">
-                                <i class="material-icons-two-tone text-white">star</i>
+                                <i class="material-icons-two-tone text-white">local_library</i>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
 </div>
