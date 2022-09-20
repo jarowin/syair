@@ -61,7 +61,7 @@ Detail Prediksi
                             </div>
                         </div>
                         <div class="d-grid gap-2 col-lg-2 col-md-3 col-sm-3 mx-auto">
-                            <button class="btn btn-secondary disabled btn-lg" type="button" style="font-size: 18px">MK : {{ $prediksis->makau }}</button>
+                            <button class="btn btn-secondary disabled btn-lg fs18" type="button">MK : {{ $prediksis->makau }}</button>
                         </div>
                         <div class="row py-4 text-white text-center">
                             <span class="px-5 py-4 f15">
@@ -73,12 +73,14 @@ Detail Prediksi
                         </div>
                     </div>
                     <div class="card-footer text-center">
-                        <h4 class="text-white">Join untuk cuan. Hanya disini</h4>
+                        <h4 class="text-white">Join untuk cuan. 
+                        <a class="text-white" href="https://totoabadi8.com/link.php?member=ids13" target="_blank">
+                            <span class="material-symbols-outlined">payments</span> Hanya disini</a></h4>
                     </div>
                 </div>
             </div>
             <div class="row mt-4">
-                <a href="{{ route('welcome') }}" class="btn btn-info btn-block">Kembali</a>
+                <a href="{{ route('welcome') }}" class="btn btn-secondary btn-block f18">Kembali</a>
             </div>
             
         </div>
