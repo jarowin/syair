@@ -10,7 +10,7 @@ Detail Prediksi
         <div class="container">
             <div class="row mt-4 mx-1">
                 <div class="card card-bg">
-                    <div class="card-header text-center">
+                    <div class="card-header text-center mt-5">
                         <h1 class=" text-white">Mbah Gendeng AH Pamungkas</h1>
                     </div>
                     <div class="card-body card-body-bg">
