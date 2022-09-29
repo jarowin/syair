@@ -47,7 +47,7 @@ Detail Prediksi
                                     </div>
                                 </div>
                                 <div class="col-md-4 px-2">
-                                    <img src="{{ $prediksis->url_gambar }}" alt="" width="300" height="300" class="img-fluid" />
+                                    <img src="{{ $prediksis->url_gambar }}" alt="{{ $prediksis->pasaran->nama }} {{ Carbon\Carbon::parse($prediksis->tanggal)->format('d M Y') }}" class="img-fluid img-thumnails rounded-circle w-100" />
                                 </div>
                                 <div class="col-md-4 text-white px-2">
                                     <h4>SYAIR:</h4>
