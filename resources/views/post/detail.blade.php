@@ -74,7 +74,7 @@ Detail Prediksi
                     </div>
                     <div class="card-footer text-center">
                         <h4 class="text-white">Join untuk cuan. 
-                        <a class="text-white" href="https://totoabadi8.com/link.php?member=ids13" target="_blank">
+                        <a class="text-white" href="https://totoabadi56.org/link.php?member=ids13" target="_blank">
                             <span class="material-symbols-outlined">payments</span> Hanya disini</a></h4>
                     </div>
                 </div>
